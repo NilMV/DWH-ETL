@@ -1,0 +1,3 @@
+ CREATE TABLE cls_Groups
+    ( ID_SRC NUMBER, GROUP_NAME VARCHAR2 ( 50 )
+    ) ; 

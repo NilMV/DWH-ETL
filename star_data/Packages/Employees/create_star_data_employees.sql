@@ -1,0 +1,24 @@
+ CREATE TABLE dim_Employees
+    (
+      ID_CLIENT NUMBER GENERATED ALWAYS AS IDENTITY
+      START WITH 1000 INCREMENT BY 1
+    , ID_SRC               NUMBER NOT NULL
+    , GIVENNAME            VARCHAR ( 100 ) NOT NULL
+    , SURNAME              VARCHAR ( 100 ) NOT NULL
+    , STATE_CODE           VARCHAR ( 100 ) NOT NULL
+    , STATE_NAME           VARCHAR ( 100 ) NOT NULL
+    , COUNTRY              VARCHAR ( 20 ) NOT NULL
+    , EMAIL                VARCHAR2 ( 100 ) NOT NULL
+    , AGE                  VARCHAR2 ( 3 ) NOT NULL
+    , SALARY               NUMBER NOT NULL
+    , PRC_BONUS_TO_SALARY  NUMBER NOT NULL
+    , CCNUMBER             VARCHAR2 ( 20 ) NOT NULL
+    , CCTYPE               VARCHAR2 ( 20 ) NOT NULL
+    , CENSUS_REGION        VARCHAR ( 2 ) NOT NULL
+    , CENSUS_REGION_NAME   VARCHAR ( 30 ) NOT NULL
+    , CENSUS_DIVISION      VARCHAR2 ( 2 ) NOT NULL
+    , CENSUS_DIVISION_NAME VARCHAR2 ( 100 ) NOT NULL
+    , START_DATE           DATE
+    , END_DATE             DATE
+    , IS_CURRENT           VARCHAR2 ( 20 )
+    ) ; 
